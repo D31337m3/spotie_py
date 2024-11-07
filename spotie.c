@@ -16,23 +16,24 @@ int main(int argc, char *argv[]) {
     signal(SIGTERM, signal_handler);
     // ... rest of main
 }
-
-
 // Add this function near the top
 void show_easter_egg() {
     printf("\n");
-    printf("    🎵 You found the secret! 🎵\n");
+     printf("    🎵 Never Gonna Give You Up! 🎵\n");
     printf("    ________________________\n");
     printf("   |  ♫ ♪ ♫ ♪ ♫ ♪ ♫ ♪ ♫   |\n");
-    printf("   |  Spotie was created    |\n");
-    printf("   |  by music lovers       |\n");
-    printf("   |  an for #1 and only 1  |\n");
+    printf("   |  Never gonna give you up|\n");
+    printf("   |  Never gonna let you down|\n");
+    printf("   |  Never gonna run around |\n");
+    printf("   |  And desert you!        |\n");
     printf("   |  ♫ ♪ ♫ ♪ ♫ ♪ ♫ ♪ ♫   |\n");
     printf("    ‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾‾\n");
     printf("\n");
+      // Play Never Gonna Give You Up
+    spotify_play_uri(player, "spotify:track:4cOdK2wGLETKBW3PvgPWqT");
 }
 
-typedef struct {
+typedef dbusconstruct {
     DBusConnection *bus;
     DBusError error;
     char *spotify_service;
